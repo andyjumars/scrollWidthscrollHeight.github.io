@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>scrollHeight和scrollWidth</title>
+	<style type="text/css">
+		#box{
+			width: 100px;
+			height: 100px;
+			border: 1px solid #000000;
+			padding:10px;
+			margin:10px;
+			overflow:scroll;
+
+		}
+	</style>
+	
+</head>
+<body>
+	<div id="box">
+			<p>内容</p>
+			<p>内容</p>
+			<p>内容</p>
+			<p>内容</p>
+			<p>内容</p>
+			<p>内容</p>
+			<p>内容</p>
+			<p>内容</p>
+			<p>内容</p>
+			<p>内容</p>
+			<p>内容</p>
+			<p>内容</p>
+			<p>内容</p>
+			<p>内容</p>
+			<p>内容</p>
+			<p>内容</p>
+			<p>内容</p>
+			<p>内容</p>
+			<p>内容</p>
+			<p>内容</p>
+			<p>内容</p>
+			<p>内容</p>
+			<p>内容</p>
+		</div>
+
+	<script type="text/javascript">
+		// 1.scrollHeight 表示元素的總高度,包含由於溢出而無法在網頁上的不可見部分
+		// 2.scrollWidth 表示元素的總寬度,包含由於溢出而無法在網頁上的不可見部分
+
+		var box = document.getElementById('box');
+		//1.無滾動條時,scrollHeight跟clientHeight屬性結果是等的
+		console.log(box.scrollHeight);
+		console.log(box.scrollWidth);
+
+		//2.有滾動條的時候
+		console.log(box.scrollHeight);
+		console.log(box.scrollWidth);
+
+
+	</script>
+</body>
+</html>
